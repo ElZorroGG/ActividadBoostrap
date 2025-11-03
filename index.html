@@ -9,18 +9,18 @@
 <body>
 
     <!-- Barra de navegación -->
-    <nav class="container-fluid " >
+    <nav class="container-fluid bg-dark" >
             <div class="row">
                 <div class="col ">
-                <a href="#">Mi Sitio Web</a>
+                <a href="#" class="text-white text-decoration-none">Mi Sitio Web</a>
                 </div>
                 <div class="col">
-                    <ul class="row">
-                        <button type="button" class="col-5">Menú</button>
-                        <li class="col"><a href="#">Inicio</a></li>
-                        <li class="col"><a href="#">Acerca de</a></li>
-                        <li class="col"><a href="#">Servicios</a></li>
-                        <li class="col"><a href="#">Contacto</a></li>
+                    <ul class="row ">
+                        <button type="button" hidden class="col-5">Menú</button>
+                        <li class="col"><a href="#" class="text-white text-decoration-none">Inicio</a></li>
+                        <li class="col"><a href="#" class="text-white text-decoration-none">Acerca de</a></li>
+                        <li class="col"><a href="#" class="text-white text-decoration-none">Servicios</a></li>
+                        <li class="col"><a href="#" class="text-white text-decoration-none">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -28,9 +28,9 @@
     </nav>
 
     <!-- Encabezado -->
-    <header class="container bg-primary text-white">
+    <header class="container-fluid bg-primary text-white">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 text-center">
                 <h1>Bienvenidos a Mi Sitio Web</h1>
                 <p>Este es un ejemplo utilizando HTML y el Grid de Bootstrap</p>
             </div>
@@ -49,7 +49,7 @@
                 <!-- Tabla -->
                 <div>
                     <h2>Tabla de Ejemplo</h2>
-                    <table>
+                    <table class="table table-dark">
                         <thead>
                             <tr>
                                 <th>#</th>
@@ -86,26 +86,26 @@
                     <h2>Formulario de Contacto</h2>
                     <form>
                         <div>
-                            <label for="nombre">Nombre Completo</label>
-                            <input type="text" id="nombre" placeholder="Escribe tu nombre">
+                            <label  class="form-label" for="nombre">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre">
                         </div>
                         <div>
-                            <label for="email">Correo Electrónico</label>
-                            <input type="email" id="email" placeholder="nombre@ejemplo.com">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
                         </div>
                         <div>
-                            <label for="mensaje">Mensaje</label>
-                            <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
                         </div>
-                        <button type="submit">Enviar</button>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
                     </form>
                 </div>
             </section>
 
             <!-- Columna secundaria-->
-            <aside class="col-12 col-md-4">
+            <aside class="col-12 col-md-4 bg-pr">
                 <h3>Columna Secundaria</h3>
-                <ul>
+                <ul class>
                     <li>Elemento 1</li>
                     <li>Elemento 2</li>
                     <li>Elemento 3</li>
@@ -115,7 +115,7 @@
     </main>
 
     <!-- Pie de página-->
-    <footer class="container-fluid ">
+    <footer class="container ">
         <div class="row">
             <div class="col-12">
                 <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
